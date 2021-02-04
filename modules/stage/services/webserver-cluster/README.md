@@ -5,10 +5,7 @@ This folder contains an example [Terraform](https://www.terraform.io/) configura
 (using [ELB](https://aws.amazon.com/elasticloadbalancing/)) in an [Amazon Web Services (AWS) 
 account](http://aws.amazon.com/). The load balancer listens on port 80 and returns the text "Hello, World" for the 
 `/` URL. The code for the cluster and load balancer are defined as a Terraform module in
-[modules/services/webserver-cluster](../../../modules/services/webserver-cluster).
 
-For more info, please see Chapter 4, "How to Create Reusable Infrastructure with Terraform Modules", of 
-*[Terraform: Up and Running](http://www.terraformupandrunning.com)*.
 
 ## Pre-requisites
 
