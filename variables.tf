@@ -24,7 +24,7 @@ variable "autoscale-group" {
   default     = "dev-env"
 }
 
-variable "autoscale-region" {
+variable "autoscale_region" {
   description = "The name to use to namespace all the resources in the cluster"
   type        = string
   default     = "eu-central-1"
