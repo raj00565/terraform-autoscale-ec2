@@ -1,0 +1,3 @@
+[submodule "modules/autoscale"]
+	path = modules/autoscale
+	url = https://github.com/raj00565/terraform-modules-autoscale.git
