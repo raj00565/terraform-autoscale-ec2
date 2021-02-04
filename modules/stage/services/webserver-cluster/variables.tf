@@ -18,8 +18,8 @@ variable "db_remote_state_key" {
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------
 
-variable "autoscale-group" {
+variable "cluster_name" {
   description = "The name to use to namespace all the resources in the cluster"
   type        = string
-  default     = "dev-env"
+  default     = "stage-env"
 }
