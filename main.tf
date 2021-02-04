@@ -15,7 +15,7 @@ module "autoscale" {
 
   # Since the terraform-up-and-running-code repo is open source, we're using an HTTPS URL here. If it was a private
   # repo, we'd instead use an SSH URL (git@github.com:brikis98/terraform-up-and-running-code.git) to leverage SSH auth
-  source = "https://github.com/raj00565/terraform-modules-autoscale.git?ref=v1.0.1"
+  source = "https://github.com/raj00565/terraform-modules-autoscale.git?ref=v1.0.2"
 
   cluster_name           = var.cluster_name
   db_remote_state_bucket = var.db_remote_state_bucket
