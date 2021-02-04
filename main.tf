@@ -1,19 +1,21 @@
 terraform {
-  required_version = ">= 0.14.5"
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "3.26.0"
+    }
+  }
 }
 
 provider "aws" {
   region = "us-east-2"
-
-  # Allow any 2.x version of the AWS provider
-  version = "~> 3.0"
-}
+ }
 
 module "autoscale" {
 
   # Since the terraform-up-and-running-code repo is open source, we're using an HTTPS URL here. If it was a private
   # repo, we'd instead use an SSH URL (git@github.com:brikis98/terraform-up-and-running-code.git) to leverage SSH auth
-  source = "github.com/raj00565/terraform-vpc-ec2//modules/autoscale?ref=v1.01"
+  source = "https://github.com/raj00565/terraform-modules-autoscale.git?ref=v1.0.0"
 
   cluster_name           = var.cluster_name
   db_remote_state_bucket = var.db_remote_state_bucket
